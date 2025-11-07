@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+h<!DOCTYPE html>
 <html lang="en">
 	<head>
 		<meta charset="UTF-8" />
@@ -37,7 +37,7 @@
         			<span class="font-semibold">COLMAR</span> 
         			<span class="font-normal text-gray-500">ACADEMY</span>
     				</a>
-					<div class="flex justify-between space-x-4">
+					<div class="flex items-center justify-between space-x-4">
       				<a href="#" class="hover:text-blue-600">On campus</a>
       				<a href="#" class="hover:text-blue-600">Online</a>
       				<a href="#" class="hover:text-blue-600">For companies</a>
@@ -45,7 +45,7 @@
 					</div>
 				</div>
 
-    			<div class="flex md:hidden justify-between items-center bg-white border-b border-gray-200">
+    			<div class="flex md:hidden justify-around items-center">
         			<a href="/" class="p-2 hover:bg-gray-100">
 						<img class="inline-block h-auto w-auto" src="images\ic-logo.svg" alt="colmar_homepage">
 					</a>
@@ -63,49 +63,126 @@
 		</header>
 
 		<main>
-			<section class="flex flex-col md:flex-row mb-8  bg-gray-200">
+			<section class="flex flex-col md:flex-row bg-gray-200">
 				<div class="md:w-3/5 ">
 					<img class="h-full w-full md:py-8 md:px-6" src="images\banner.jpg" alt="banner">
 				</div>
 				<div class="md:w-2/5 px-4 md:px-6 flex flex-col items-start justify-center">
 					<h1 class="text-4xl font-bold mt-8 mb-8 text-gray-800">Learn something<br>new everyday</h1>
 					<p class="text-2xl font-semibold text-gray-800 mt-8 mb-6">Lorem ipsum dolor sit amet,<br>consectetur adipisicing elit.</p>
-					<button class="w-full md:w-3/5 py-2 text-white bg-gray-700 items-center justify-center mb-8">Start here</button>
+					<a href="#" class="w-full py-2 text-white bg-gray-700 items-center justify-center hover:bg-gray-400 text-center md:w-4/5 mb-8">Start here</a>
 				</div>
 			</section>
 
-			<section class="flex flex-col md:flex-row mb-8 bg-white">
-				<div class="flex flex-col justify-between space-y-16">
-    				<div class="block md:hidden px-4">
-						<img class="w-full h-auto object-cover" src="images\information-orientation-mobile.jpg" alt="information-orientation-mobile">
-						<div class="px-4">
-							<p class="font-bold text-2xl py-4">Orientation date</p>
+			<section class="flex flex-col md:flex-row py-8">
+				<div class="hidden md:flex w-auto md:w-3/5">
+					<div class="px-6">
+							<img class="w-full h-auto object-cover pb-8" src="images\information-main.jpg" alt="main">
+							<h2 class="text-4xl font-bold pb-6">It doesn't hurt to keep practicing</h2>
+							<p class="pb-6">Lorem ipsum dolor sit amet consectetur adipisicing elit. Culpa minima commodi, in laboriosam quo eveniet exercitationem dolorem expedita totam provident!</p>
+							<p>Emmanuel, Sr Strategist at Hiring.com</p>
+					</div>
+
+				</div>
+
+				<div class="block w-auto md:w-2/5 justify-around">
+    				<div class="grid grid-cols-1 md:grid-cols-[35fr_65fr] items-center">
+						<img class="hidden md:block md:h-auto md:w-full object-cover p-4" src="images\information-orientation.jpg" alt="information-orientation">
+						<img class="block md:hidden p-4" src="images\information-orientation-mobile.jpg" alt="information-orientation-mobile">
+						<div class="grid md:grid px-4 space-y-2 pb-6 items-center justify-around">
+							<p class="font-bold text-2xl">Orientation date</p>
 							<p>Tue 10/11 & Wed 10/12: 8am-3pm</p>
 							<a href="#" class="text-blue-500">Read more</a>
 						</div>
 					</div>
-					<div class="block md:hidden px-4">
-						<img class="w-full h-auto object-cover" src="images\information-campus-mobile.jpg" alt="information-campus-mobile">
-						<div class="px-4">
-							<p class="font-bold text-2xl py-4">Our campus</p>
+					<div class="grid grid-cols-1 md:grid-cols-[35fr_65fr] items-center">
+						<img class="hidden md:block md:h-auto md:w-full object-cover p-4" src="images\information-campus.jpg" alt="information-campus">
+						<img class="block md:hidden p-4" src="images\information-campus-mobile.jpg" alt="information-campus-mobile">
+						<div class="grid md:grid px-4 space-y-2 pb-6 items-center justify-around">
+							<p class="font-bold text-2xl">Our campus</p>
 							<p>Find which campus is close by you</p>
-							<a href="#" class="text-blue-500">Read more</a>
+							<a href="#" class="text-blue-500 ">Read more</a>
 						</div>
 					</div>
-					<div class="block md:hidden px-4">
-						<img class="w-full h-auto object-cover" src="images\information-guest-lecture-mobile.jpg" alt="information-guest-lecture-mobile">
-						<div class="px-4">
-							<p class="font-bold text-2xl py-4">Our guest lecture</p>
+					<div class="grid grid-cols-1 md:grid-cols-[35fr_65fr] items-center">
+						<img class="hidden md:block md:h-auto md:w-full object-cover p-4" src="images\information-guest-lecture.jpg" alt="information-guest-lecture">
+						<img class="flex md:hidden p-4" src="images\information-guest-lecture-mobile.jpg" alt="information-guest-lecture-mobile">
+						<div class="grid md:grid px-4 space-y-2 pb-6 items-center justify-center">
+							<p class="font-bold text-2xl">Our guest lecture</p>
 							<p>Join a keynote with Oliver Sack about music in medical treatment</p>
 							<a href="#" class="text-blue-500">Read more</a>
 						</div>
 					</div>
 				</div>
 			</section>
-			<section>
+			<section class="grid grid-cols-1 md:flex-col py-8 px-4 bg-white md:bg-gray-200">
+				<div class="grid-cols-1 items-center pb-4 md:pb-8">
+					<p class="font-bold text-4xl text-center ">Start learning</p>
+				</div>
+				<div class="grid grid-cols-1 md:grid-cols-3 md:px  bg-white md:bg-gray-200">
+					<a href="#" class="grid md:grid bg-gray-200 md:bg-white">
+            			<img class="hidden md:block h-auto w-full object-cover" src="images\course-software.jpg" alt="Software engineering">
+            			<div class="px-4 space-y-1"> 
+                			<h3 class="text-2xl font-bold text-gray-900 pt-4 py-6 items-center justify-center">Software engineering</h3>
+                			<p class="hidden md:grid font-semibold text-gray-700">COURSES</p>
+                			<p class="hidden md:grid text-gray-500">Web Development, IOT, APIs</p>
+                		</div>
+        			</a>
+					<a href="#" class="grid md:grid bg-gray-200 md:bg-white">
+            			<img class="hidden md:block h-auto w-full object-cover" src="images\course-computer-art.jpg" alt="Computer art">
+            			<div class="px-4 space-y-1"> 
+                			<h3 class="text-2xl font-bold text-gray-900 pt-4 pb-6 items-center justify-center">Computer art</h3>
+                			<p class="hidden md:grid font-semibold text-gray-700">COURSES</p>
+                			<p class="hidden md:grid text-gray-500">Imaging & Design, Web Design, Motion Graphics & Visual Effects, Computer Animation</p>
+                		</div>
+        			</a>
+					<a href="#" class="grid md:grid bg-gray-200 md:bg-white">
+            			<img class="hidden md:block h-auto object-cover" src="images\course-design.jpg" alt="Software engineering">
+            			<div class="px-4 space-y-1"> 
+                			<h3 class="text-2xl font-bold text-gray-900 pt-4 pb-6 items-center justify-center">Design</h3>
+                			<p class="hidden md:grid font-semibold text-gray-700">COURSES</p>
+                			<p class="hidden md:grid text-gray-500">User Experience Design, User Research, Visual Design</p>
+                		</div>
+        			</a>
+					<a href="#" class="grid md:grid bg-gray-200 md:bg-white">
+            			<img class="hidden md:block h-auto object-cover" src="images\course-data.jpg" alt="Data">
+            			<div class="px-4 space-y-1"> 
+                			<h3 class="text-2xl font-bold text-gray-900 pt-4 pb-6 items-center justify-center">Data</h3>
+                			<p class="hidden md:grid font-semibold text-gray-700">COURSES</p>
+                			<p class="hidden md:grid text-gray-500">Data Science, Big Data, SQL, Data Visualization</p>
+                		</div>
+        			</a>
+					<a href="#" class="grid md:grid bg-gray-200 md:bg-white">
+            			<img class="hidden md:block h-auto object-cover" src="images\course-business.jpg" alt="Business">
+            			<div class="px-4 space-y-1"> 
+                			<h3 class="text-2xl font-bold text-gray-900 pt-4 pb-6 items-center justify-center">Business</h3>
+                			<p class="hidden md:grid font-semibold text-gray-700">COURSES</p>
+                			<p class="hidden md:grid text-gray-500">Product Development, Business Development, Startup</p>
+                		</div>
+        			</a>
+					<a href="#" class="grid md:grid bg-gray-200 md:bg-white items-center">
+            			<img class="hidden md:block h-auto object-cover" src="images\course-marketing.jpg" alt="Marketing">
+            			<div class="px-4 space-y-1"> 
+                			<h3 class="text-2xl font-bold text-gray-900 pt-4 pb-6 items-center justify-center">Marketing</h3>
+                			<p class="hidden md:grid font-semibold text-gray-700">COURSES</p>
+                			<p class="hidden md:grid text-gray-500">Analytics, Content Marketing, Mobile Marketing</p>
+                		</div>
+        			</a>
+				</div>
 
 			</section>
-
+			<section class="flex flex-row md:flex-col">
+				<div class="flex flex-row md:flex-col items-center justify-center">
+				<h2 class="text-4xl font-bold pt-8 pb-4 md:pb-8">Thesis exhibit</h2>
+				</div>
+				<div class="flex flex-row md:flex-col md:w-3/5 md:px-6 md:pb-8">
+				<video controls autoplay muted loop poster="" class="w-full h-auto object-cover pb-6 ">
+    				<source src="videos\thesis.mp4" type="video/mp4">Your browser does not support the video tag.
+				</video>
+				<h3 class="text-2xl font-bold pb-2">Reimagine Urban</h3>
+				<p class="pb-8">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dolorum ipsa eum, velit minima nisi expedita, harum accusantium fugiat debitis excepturi, et quos. Pariatur earum consequuntur voluptatum cupiditate omnis repellat inventore?</p>
+				</div>
+			</section>
 
 		</main>
 		<footer>
