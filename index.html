@@ -1,4 +1,4 @@
-h<!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="en">
 	<head>
 		<meta charset="UTF-8" />
@@ -45,18 +45,18 @@ h<!DOCTYPE html>
 					</div>
 				</div>
 
-    			<div class="flex md:hidden justify-around items-center">
-        			<a href="/" class="p-2 hover:bg-gray-100">
-						<img class="inline-block h-auto w-auto" src="images\ic-logo.svg" alt="colmar_homepage">
+    			<div class="flex md:hidden justify-between items-center w-full px-6 py-4  bg-white>
+        			<a href="/" class=" hover:bg-gray-100">
+						<img class="h-auto w-auto" src="images\ic-logo.svg" alt="colmar_homepage">
 					</a>
-        			<a href="#" class="p-2 hover:bg-gray-100 rounded">
-						<img class="inline-block h-auto w-auto" src="images\ic-on-campus.svg" alt="colmar_on_campus">
+        			<a href="#" class=" hover:bg-gray-100 rounded">
+						<img class="h-auto w-auto" src="images\ic-on-campus.svg" alt="colmar_on_campus">
 					</a>
-        			<a href="#" class="p-2 hover:bg-gray-100 rounded">
-						<img class="inline-block h-auto w-auto" src="images\ic-online.svg" alt="colmar_online">
+        			<a href="#" class=" hover:bg-gray-100 rounded">
+						<img class="h-auto w-auto" src="images\ic-online.svg" alt="colmar_online">
 					</a>
-        			<a href="#" class="p-2 hover:bg-gray-100 rounded">
-						<img class="inline-block h-auto w-auto" src="images\ic-login.svg" alt="colmar_login">
+        			<a href="#" class=" hover:bg-gray-100 rounded">
+						<img class="h-auto w-auto" src="images\ic-login.svg" alt="colmar_login">
 					</a>
    				</div>
 			</nav>
@@ -171,22 +171,43 @@ h<!DOCTYPE html>
 				</div>
 
 			</section>
-			<section class="flex flex-row md:flex-col">
-				<div class="flex flex-row md:flex-col items-center justify-center">
-				<h2 class="text-4xl font-bold pt-8 pb-4 md:pb-8">Thesis exhibit</h2>
+			<section class="flex flex-col md:flex-row py-8">
+				<div class="flex flex-col items-center justify-cente">
+					<h2 class="flex flex-row md:flex-col text-4xl font-bold pt-8 pb-4 md:pb-8">Thesis exhibit</h2>
 				</div>
-				<div class="flex flex-row md:flex-col md:w-3/5 md:px-6 md:pb-8">
-				<video controls autoplay muted loop poster="" class="w-full h-auto object-cover pb-6 ">
-    				<source src="videos\thesis.mp4" type="video/mp4">Your browser does not support the video tag.
-				</video>
-				<h3 class="text-2xl font-bold pb-2">Reimagine Urban</h3>
-				<p class="pb-8">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dolorum ipsa eum, velit minima nisi expedita, harum accusantium fugiat debitis excepturi, et quos. Pariatur earum consequuntur voluptatum cupiditate omnis repellat inventore?</p>
+				<div>
+					<div class="flex flex-row md:flex-col md:w-3/5 md:px-6 md:pb-8">
+					<video controls autoplay muted loop poster="" class="w-full h-auto object-cover pb-6 ">
+    					<source src="videos\thesis.mp4" type="video/mp4">Your browser does not support the video tag.
+					</video>
+					<h3 class="hidden md:flex-row text-2xl font-bold pb-2">Reimagine Urban</h3>
+					<p class="hidden md:flex-row pb-8">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dolorum ipsa eum, velit minima nisi expedita, harum accusantium fugiat debitis excepturi, et quos. Pariatur earum consequuntur voluptatum cupiditate omnis repellat inventore?</p>
+					</div>
+					<div class="hidden flex-row md:flex-col md:w-2/5 md:px-6 md:pb-8">
+						<a href="#" class="">
+							<img class="md:block md:h-auto md:w-full object-cover p-4" src="images\thesis-fisma.jpg" alt="thesis-figma">
+							<h3 class="text-2xl font-bold text-gray-900 pt-4 py-6 items-center justify-center">Fishma: Design and Prototype</h3>
+                			<p class="hidden md:grid font-semibold text-gray-700">Designer show case of new prototype product</p>
+
+						</a>
+						<a href="#" class="">
+							<img class="md:block md:h-auto md:w-full object-cover p-4" src="images\thesis-now-and-then.jpg" alt="thesis-now-and-then">
+							<h3 class="text-2xl font-bold text-gray-900 pt-4 py-6 items-center justify-center">Now and then</h3>
+                			<p class="hidden md:grid font-semibold text-gray-700">Research study about New York</p>
+						</a>
+					</div>
 				</div>
 			</section>
 
 		</main>
-		<footer>
-
+		<footer class="**flex flex-col md:flex-row** **justify-between** items-center px-6 py-4 border-t border-gray-200 text-sm text-gray-700">
+    		<div class=""> 
+        		<p>©2016 Colmar Academy. All rights reserved</p>
+    		</div>
+    		<div class="**flex space-x-4** **order-1 md:order-2** mb-2 md:mb-0">
+        		<a href="#" class="hidden md:flex-row hover:text-blue-600">Terms</a>
+    			<a href="#" class="hidden md:flex-row hover:text-blue-600">Privacy</a>
+    		</div>
 		</footer>
 	</body>
 
